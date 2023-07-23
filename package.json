@@ -2,20 +2,57 @@
   "name": "better-commit",
   "displayName": "Better Commit",
   "description": "VSCode extension that keeps your commit messages consistent",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "ugistelmokaitis",
   "engines": {
     "vscode": "^1.80.0"
   },
+  "license": "MIT",
+  "homepage": "https://ugistelmokaitis.com",
+  "bugs": {
+    "url": "https://github.com/ugistelmokaitis/better-commit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ugistelmokaitis/better-commit"
+  },
+  "icon": "icon.png",
+  "keywords": [
+    "git",
+    "commit",
+    "vscode",
+    "better commit",
+    "ugistelmokaitis"
+  ],
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
-  "main": "./out/extension.js",
+  "main": "./out/index.js",
+  "activationEvents": [
+  ],
   "contributes": {
     "commands": [
       {
-        "command": "better-commit.helloWorld",
-        "title": "Hello World"
+        "command": "extension.betterCommit",
+        "title": "Better Commit",
+        "category": "Other",
+        "icon": "icon.png"
+      }
+    ],
+    "menus": {
+      "scm/title": [
+        {
+          "command": "extension.betterCommit",
+          "group": "navigation",
+          "when": "scmProvider == git"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "extension.betterCommit",
+        "key": "ctrl+alt+enter",
+        "mac": "cmd+shift+enter"
       }
     ]
   },
@@ -24,8 +61,7 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "lint": "eslint src --ext ts"
   },
   "devDependencies": {
     "@types/vscode": "^1.80.0",
