@@ -16,15 +16,13 @@ Structure of the commit message:
 
 Category | Summary
 ---  | ---
-**init** | Project initialization
 **feat** | Add a new feature
-**fix** | Fix a bug
-**docs** | Modify documentation changes only
-**style** | Code style changes (white-space, formatting, missing semi-colons, etc)
-**refactor** | Code refactoring changes (changes that are neither fixes bug nor adds a feature)
-**remove** | Remove a file, code or directory
+**fix** | A bug fix
+**docs** | Documentation only changes
+**style** | Markup, white-space, formatting, missing semi-colons... no code change
+**refactor** | A code change that neither fixes a bug nor adds a feature
 **perf** | A code change that improves performance
-**test** | Adding test or correcting existing test
+**test** | Adding missing tests or correcting existing tests
 **chore** | Update build scripts, package manager configs, etc; no production code change
 
 
