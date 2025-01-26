@@ -23,7 +23,8 @@
 			"recommended": true,
 			"suspicious": {
 				"noShadowRestrictedNames": "off",
-				"noArrayIndexKey": "off"
+				"noArrayIndexKey": "off",
+				"noConstEnum": "off"
 			},
 			"security": {
 				"noDangerouslySetInnerHtml": "off"
@@ -35,7 +36,8 @@
 				"useConst": "off",
 				"noUselessElse": "off",
 				"noNonNullAssertion": "off",
-				"noParameterAssign": "off"
+				"noParameterAssign": "off",
+				"useEnumInitializers": "off"
 			},
 			"correctness": {
 				"useExhaustiveDependencies": "off"
