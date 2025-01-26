@@ -2,7 +2,7 @@
 	"name": "better-commits",
 	"displayName": "Better Commits",
 	"description": "VSCode extension that keeps your commit messages consistent",
-	"version": "1.4.0",
+	"version": "1.5.0",
 	"publisher": "ugi-dev",
 	"engines": {
 		"vscode": "^1.80.0"
@@ -17,8 +17,16 @@
 		"url": "https://github.com/ugi-dev/better-commits"
 	},
 	"icon": "icon.png",
-	"keywords": ["git", "commits", "vscode", "better commits", "ugi-dev"],
-	"categories": ["Other"],
+	"keywords": [
+		"git",
+		"commits",
+		"vscode",
+		"better commits",
+		"ugi-dev"
+	],
+	"categories": [
+		"Other"
+	],
 	"main": "./out/index.js",
 	"activationEvents": [],
 	"contributes": {
