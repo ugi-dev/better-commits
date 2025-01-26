@@ -1,6 +1,6 @@
 {
-	"name": "better-commit",
-	"displayName": "Better Commit",
+	"name": "better-commits",
+	"displayName": "Better Commits",
 	"description": "VSCode extension that keeps your commit messages consistent",
 	"version": "1.3.0",
 	"publisher": "ugi-dev",
@@ -10,30 +10,22 @@
 	"license": "MIT",
 	"homepage": "https://ugi.dev",
 	"bugs": {
-		"url": "https://github.com/ugi-dev/better-commit/issues"
+		"url": "https://github.com/ugi-dev/better-commits/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ugi-dev/better-commit"
+		"url": "https://github.com/ugi-dev/better-commits"
 	},
 	"icon": "icon.png",
-	"keywords": [
-		"git",
-		"commit",
-		"vscode",
-		"better commit",
-		"ugi-dev"
-	],
-	"categories": [
-		"Other"
-	],
+	"keywords": ["git", "commits", "vscode", "better commits", "ugi-dev"],
+	"categories": ["Other"],
 	"main": "./out/index.js",
 	"activationEvents": [],
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.betterCommit",
-				"title": "Better Commit",
+				"command": "extension.betterCommits",
+				"title": "Better Commits",
 				"category": "Other",
 				"icon": "icon.png"
 			}
@@ -41,7 +33,7 @@
 		"menus": {
 			"scm/title": [
 				{
-					"command": "extension.betterCommit",
+					"command": "extension.betterCommits",
 					"group": "navigation",
 					"when": "scmProvider == git"
 				}
@@ -49,7 +41,7 @@
 		},
 		"keybindings": [
 			{
-				"command": "extension.betterCommit",
+				"command": "extension.betterCommits",
 				"key": "ctrl+alt+enter",
 				"mac": "cmd+shift+enter"
 			}

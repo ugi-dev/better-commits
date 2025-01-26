@@ -1,8 +1,8 @@
 <img src="/cover.png" alt="cover_image"/>
 
-# ⚙️ Better Commit
+# ⚙️ Better Commits
 
-"Better Commit" is a powerful Visual Studio Code extension that enforces standardized commit messages, ensuring convention and consistency across Git repositories. By utilizing predefined commit templates, it streamlines the commit process, promoting a unified style within development teams. Improve collaboration and project clarity with this efficient tool, creating clean, informative, and consistent commit histories effortlessly.
+"Better Commits" is a powerful Visual Studio Code extension that enforces standardized commit messages, ensuring convention and consistency across Git repositories. By utilizing predefined commit templates, it streamlines the commit process, promoting a unified style within development teams. Improve collaboration and project clarity with this efficient tool, creating clean, informative, and consistent commit histories effortlessly.
 
 ## Commit Message Format
 
