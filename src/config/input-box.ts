@@ -1,11 +1,11 @@
-import { InputBoxOptions } from "vscode";
-import { QuickPickOptions } from "vscode";
+import type { InputBoxOptions } from "vscode";
+import type { QuickPickOptions } from "vscode";
 
 export interface MessageInputType extends InputBoxOptions {
-  placeHolder: string;
-  ignoreFocusOut: boolean;
-  prompt: string;
-  value: string;
+	placeHolder: string;
+	ignoreFocusOut: boolean;
+	prompt: string;
+	value: string;
 }
 
 /*
@@ -15,10 +15,10 @@ export interface MessageInputType extends InputBoxOptions {
  */
 
 export const messageInputType: MessageInputType = {
-  placeHolder: "Start typing commit message here ...",
-  ignoreFocusOut: true,
-  prompt: "",
-  value: "",
+	placeHolder: "Start typing commit message here ...",
+	ignoreFocusOut: true,
+	prompt: "",
+	value: "",
 };
 
 /*
@@ -28,9 +28,9 @@ export const messageInputType: MessageInputType = {
  */
 
 export const commitTypeOptions: QuickPickOptions & { canPickMany: false } = {
-  placeHolder: "Select a commit type",
-  ignoreFocusOut: true,
-  matchOnDescription: true,
-  matchOnDetail: true,
-  canPickMany: false,
+	placeHolder: "Select a commit type",
+	ignoreFocusOut: true,
+	matchOnDescription: true,
+	matchOnDetail: true,
+	canPickMany: false,
 };
