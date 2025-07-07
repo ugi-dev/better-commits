@@ -2,7 +2,7 @@
 	"name": "better-commits",
 	"displayName": "Better Commits",
 	"description": "VSCode extension that keeps your commit messages consistent",
-	"version": "1.5.1",
+	"version": "1.5.2",
 	"publisher": "ugi-dev",
 	"engines": {
 		"vscode": "^1.80.0"
