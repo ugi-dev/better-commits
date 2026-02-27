@@ -17,16 +17,8 @@
 		"url": "https://github.com/ugi-dev/better-commits"
 	},
 	"icon": "icon.png",
-	"keywords": [
-		"git",
-		"commits",
-		"vscode",
-		"better commits",
-		"ugi-dev"
-	],
-	"categories": [
-		"Other"
-	],
+	"keywords": ["git", "commits", "vscode", "better commits", "ugi-dev"],
+	"categories": ["Other"],
 	"main": "./out/index.js",
 	"activationEvents": [],
 	"contributes": {
@@ -53,7 +45,36 @@
 				"key": "ctrl+alt+enter",
 				"mac": "cmd+shift+enter"
 			}
-		]
+		],
+		"configuration": {
+			"title": "Better Commits",
+			"properties": {
+				"betterCommits.useDefaultTypes": {
+					"type": "boolean",
+					"default": true,
+					"description": "Use built-in commit types."
+				},
+				"betterCommits.types": {
+					"type": "array",
+					"default": [],
+					"description": "Custom commit types. If useDefaultTypes is false, only these are shown.",
+					"items": {
+						"type": "object",
+						"required": ["label", "description"],
+						"properties": {
+							"label": {
+								"type": "string",
+								"description": "Commit type label, e.g. feat or fix."
+							},
+							"description": {
+								"type": "string",
+								"description": "Description shown in the picker."
+							}
+						}
+					}
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",

@@ -39,3 +39,32 @@ The summary consists of a concise description of the changes made:
 
 1.  Install the extension
 2.  Use: `Cmd+Shift+Enter` For MacBook, and `Ctrl+Shift+Enter` for Windows and Linux
+
+## Using your own commit types
+
+By default, Better Commits ships with conventional types like `feat`, `fix`, `docs`, etc. You can completely turn these off and only show your own types.
+
+- **Turn off built‑in types (UI)**:
+  - Open VS Code Settings → search for `Better Commits`.
+  - Uncheck **Better Commits › Use Default Types**.
+  - Add your own entries under **Better Commits › Types** (each with a `label` and `description`).
+
+- **Turn off built‑in types (`settings.json`)**:
+
+```json
+{
+  "betterCommits.useDefaultTypes": false,
+  "betterCommits.types": [
+    {
+      "label": "feature",
+      "description": "Product work visible to users"
+    },
+    {
+      "label": "maintenance",
+      "description": "Refactors, chores, and internal cleanup"
+    }
+  ]
+}
+```
+
+With `betterCommits.useDefaultTypes` set to `false`, the picker will only show the types you define in `betterCommits.types`, and you can still write any free‑form summary when the message input box appears.
